@@ -1,0 +1,74 @@
+{
+  "manifest_version": 3,
+  "name": "DSA Tracker Pro",
+  "version": "3.0",
+  "description": "Auto-push DSA solutions from coding platforms to GitHub with streaks and stats",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "DSA Tracker",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage",
+    "notifications",
+    "alarms",
+    "identity"
+  ],
+  "host_permissions": [
+    "*://*.leetcode.com/*",
+    "*://*.geeksforgeeks.org/*",
+    "*://*.codechef.com/*",
+    "*://*.codeforces.com/*",
+    "*://*.hackerrank.com/*",
+    "https://github.com/*",
+    "https://api.github.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  
+  "content_scripts": [
+    {
+      "matches": ["*://*.leetcode.com/*"],
+      "js": ["platforms/base.js", "platforms/leetcode.js"],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": ["*://*.geeksforgeeks.org/*"],
+      "js": ["platforms/base.js", "platforms/gfg.js"],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": ["*://*.codechef.com/*"],
+      "js": ["platforms/base.js", "platforms/codechef.js"],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": ["*://*.codeforces.com/*"],
+      "js": ["platforms/base.js", "platforms/codeforces.js"],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": ["*://*.hackerrank.com/*"],
+      "js": ["platforms/base.js", "platforms/hackerrank.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["dashboard.html", "dashboard.css", "dashboard.js", "vendor/chart.umd.min.js", "icons/*"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}

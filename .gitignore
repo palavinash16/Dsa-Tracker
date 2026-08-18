@@ -1,0 +1,16 @@
+# Python
+Backend/venv/
+Backend/__pycache__/
+Backend/.pytest_cache/
+Backend/.env
+*.pyc
+
+# IDE & OS
+.vscode/
+.DS_Store
+Thumbs.db
+
+# VSIX / temp packages
+*.vsix
+_kb_inspect/
+scratch/

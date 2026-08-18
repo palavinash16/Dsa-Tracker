@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Synopsis - DSA Tracker</title>
+  <style>
+    @page {
+      size: A4;
+      margin: 20mm;
+    }
+    body {
+      font-family: 'Times New Roman', Times, serif;
+      line-height: 1.6;
+      color: #111;
+      margin: 0 auto;
+      max-width: 800px;
+      padding: 20px;
+      background-color: #fff;
+    }
+    .cover-page {
+      text-align: center;
+      border: 2px solid #000;
+      padding: 40px 20px;
+      margin-bottom: 50px;
+      page-break-after: always;
+      min-height: 900px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    h1.title {
+      font-size: 20pt;
+      font-weight: bold;
+      color: #003366;
+      margin-top: 20px;
+      margin-bottom: 30px;
+      line-height: 1.3;
+    }
+    .subtitle {
+      font-size: 13pt;
+      margin-bottom: 40px;
+    }
+    .degree {
+      font-size: 16pt;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+    .meta-section {
+      margin: 30px 0;
+      font-size: 12pt;
+    }
+    .meta-title {
+      font-weight: bold;
+      color: #003366;
+      margin-bottom: 5px;
+    }
+    .students-list {
+      margin: 10px 0;
+      font-weight: bold;
+      color: #003366;
+    }
+    .institution {
+      font-size: 13pt;
+      font-weight: bold;
+      margin-top: 30px;
+    }
+    .session {
+      font-size: 13pt;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+    h2.section-header {
+      font-size: 14pt;
+      font-weight: bold;
+      text-transform: uppercase;
+      text-align: center;
+      margin-top: 35px;
+      margin-bottom: 15px;
+      border-bottom: 1px solid #333;
+      padding-bottom: 5px;
+      page-break-after: avoid;
+    }
+    h3.sub-header {
+      font-size: 12pt;
+      font-weight: bold;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      page-break-after: avoid;
+    }
+    p, li {
+      font-size: 11pt;
+      text-align: justify;
+      margin-bottom: 10px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      page-break-inside: avoid;
+    }
+    th, td {
+      border: 1px solid #333;
+      padding: 8px 12px;
+      font-size: 10.5pt;
+      text-align: left;
+    }
+    th {
+      background-color: #f2f2f2;
+      font-weight: bold;
+      text-align: center;
+    }
+    .diagram-box {
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 9pt;
+      background: #f9f9f9;
+      border: 1px solid #ccc;
+      padding: 15px;
+      white-space: pre;
+      overflow-x: auto;
+      margin: 20px 0;
+      line-height: 1.2;
+    }
+    ul, ol {
+      padding-left: 25px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- COVER PAGE -->
+  <div class="cover-page">
+    <div>
+      <div style="font-size: 16pt; font-weight: bold; text-transform: uppercase;">Synopsis</div>
+      <h1 class="title">DSA Tracker: An Automated Browser-Based System for Multi-Platform Data Structures and Algorithms Progress Tracking and Repository Synchronization</h1>
+      <div class="subtitle">Report submitted in partial fulfillment of the requirement for the degree of</div>
+      <div class="degree">B.Tech.</div>
+      <div style="font-size: 13pt;">In</div>
+      <div class="degree" style="text-transform: uppercase;">Computer Science and Engineering</div>
+    </div>
+
+    <div class="meta-section">
+      <div class="meta-title">Under the Supervision of</div>
+      <div><strong>[Supervisor Name]</strong></div>
+      <div>[Designation]</div>
+    </div>
+
+    <div class="meta-section">
+      <div class="meta-title">By</div>
+      <div class="students-list">
+        <div>Avantika Kashyap (2200330130012)</div>
+        <div>Anchal Patel (2300330139001)</div>
+        <div>Avni Singh (2200330130014)</div>
+        <div>MD. Aman (2200330130029)</div>
+      </div>
+    </div>
+
+    <div>
+      <div class="institution">
+        [Department of Computer Science and Engineering]<br>
+        [College / Institute Name, Location]<br>
+        [Affiliated University Name]
+      </div>
+      <div class="session">2025–2026</div>
+    </div>
+  </div>
+
+  <!-- TABLE OF CONTENTS -->
+  <h2 class="section-header">TABLE OF CONTENTS</h2>
+  <table>
+    <thead>
+      <tr>
+        <th style="width: 15%;">S. NO.</th>
+        <th style="width: 65%;">TOPICS</th>
+        <th style="width: 20%;">PAGE NO.</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td style="text-align: center;">1</td><td>OBJECTIVE AND SUBOBJECTIVE</td><td style="text-align: center;">3</td></tr>
+      <tr><td style="text-align: center;">2</td><td>ABSTRACT</td><td style="text-align: center;">3-4</td></tr>
+      <tr><td style="text-align: center;">3</td><td>INTRODUCTION</td><td style="text-align: center;">4-5</td></tr>
+      <tr><td style="text-align: center;">4</td><td>LITERATURE REVIEW</td><td style="text-align: center;">5-6</td></tr>
+      <tr><td style="text-align: center;">5</td><td>METHODOLOGY</td><td style="text-align: center;">6-7</td></tr>
+      <tr><td style="text-align: center;">6</td><td>RESOURCES [H/W, S/W]</td><td style="text-align: center;">7-8</td></tr>
+      <tr><td style="text-align: center;">7</td><td>PROJECT PLANNING (SCHEDULING)</td><td style="text-align: center;">8-9</td></tr>
+      <tr><td style="text-align: center;">8</td><td>REFERENCES</td><td style="text-align: center;">9-10</td></tr>
+    </tbody>
+  </table>
+
+  <!-- 1. OBJECTIVE AND SUBOBJECTIVE -->
+  <h2 class="section-header">1. OBJECTIVE AND SUBOBJECTIVE</h2>
+  <p>The objective of this project is to design and implement an automated, client-side tracking and synchronization system—<strong>DSA Tracker</strong>—that monitors, organizes, and analyzes problem-solving progress across multiple competitive programming and coding platforms using Chrome Extension Manifest V3 architecture and GitHub REST API integration. The main goals are:</p>
+  <ol>
+    <li><strong>To capture accepted problem submissions automatically</strong> from popular online coding platforms including LeetCode, GeeksforGeeks (GFG), CodeChef, Codeforces, and HackerRank without requiring manual user intervention.</li>
+    <li><strong>To extract relevant problem metadata</strong>, such as problem title, difficulty level, topic tags, programming language, source URL, and exact solution source code directly from browser DOM elements.</li>
+    <li><strong>To classify problems automatically by topic category</strong> (such as Arrays, Dynamic Programming, Graphs, Trees, Strings) and difficulty level using client-side parsing rules.</li>
+    <li><strong>To organize and push solution files directly to a personal GitHub repository</strong> using fine-grained Personal Access Token (PAT) authentication via the GitHub REST API.</li>
+    <li><strong>To maintain a structured repository layout</strong> (<code>DSA/&lt;Category&gt;/&lt;Difficulty&gt;/&lt;Slug&gt;/</code>) containing the solution code file, a formatted <code>problem.md</code> file, and an auto-updating root <code>README.md</code> index table.</li>
+    <li><strong>To record and update problem-solving stats locally</strong> within browser storage (<code>chrome.storage.local</code>) to ensure user privacy and fast retrieval without relying on an external database server.</li>
+    <li><strong>To track daily solving streaks</strong> and issue reminder notifications using background alarm listeners (<code>chrome.alarms</code>) to encourage consistent practice.</li>
+    <li><strong>To provide an interactive analytical dashboard</strong> built with custom HTML/CSS and Chart.js, rendering statistics on difficulty distribution, platform breakdown, category progress, and recent submission history.</li>
+  </ol>
+
+  <!-- 2. ABSTRACT -->
+  <h2 class="section-header">2. ABSTRACT</h2>
+  <p>Data Structures and Algorithms (DSA) form the foundation of computer science education and technical interview preparation. Students and programmers regularly practice coding problems across multiple online platforms such as LeetCode, GeeksforGeeks, CodeChef, Codeforces, and HackerRank. However, keeping track of solved problems, solutions, and topic-wise progress across these fragmented platforms is a major challenge. Manual record-keeping in spreadsheets or local directories is tedious, inconsistent, and prone to data loss, while platform-native profiles only provide isolated, platform-specific statistics.</p>
+  <p>To address these challenges, <strong>DSA Tracker</strong> is developed as a lightweight, browser-based extension operating on Google Chrome's Manifest V3 architecture. The system automatically detects when a user successfully submits a solution on a supported coding platform, extracts the solution code along with metadata (difficulty, tags, language, and problem statement), and classifies the problem into a standard algorithmic topic. Using client-side GitHub REST API integration, DSA Tracker commits the code and generated markdown documentation directly to a user-designated GitHub repository, organizing files systematically into structured directories and maintaining an updated main index README.</p>
+  <p>In addition to automated repository synchronization, DSA Tracker includes a local analytical dashboard that operates directly within the browser using <code>chrome.storage.local</code>. The dashboard uses Chart.js to visualize difficulty distribution, platform-wise performance, category progress, and recent submission logs. It also tracks daily solving streaks and triggers notifications via <code>chrome.alarms</code> to encourage regular practice. By eliminating backend server overhead and manual tracking effort, DSA Tracker provides a secure, efficient, and centralized solution for students to manage their DSA preparation and build a verifiable portfolio of solved problems.</p>
+
+  <!-- 3. INTRODUCTION -->
+  <h2 class="section-header">3. INTRODUCTION</h2>
+  <p>Data Structures and Algorithms (DSA) are critical components of software engineering education, competitive programming, and technical hiring assessments. Mastering DSA requires continuous practice, problem analysis, and periodic revision. Today, students rely on various dedicated platforms—such as LeetCode, GeeksforGeeks, CodeChef, Codeforces, and HackerRank—to solve algorithmic challenges.</p>
+  <p>Despite the abundance of learning platforms, students face a significant organizational problem. Solved problems, code implementations, and notes remain scattered across different web portals, local files, and personal drives. This fragmentation leads to several operational difficulties:</p>
+  <ul>
+    <li>Students struggle to remember which problems they solved on which platform.</li>
+    <li>Revising previously solved problems requires navigating back to individual website submissions.</li>
+    <li>Identifying weak topics (such as Dynamic Programming or Graphs) is difficult due to the lack of unified progress analytics across platforms.</li>
+    <li>Maintaining a portfolio of solved problems on GitHub requires manual copy-pasting, which is time-consuming and often abandoned over time.</li>
+  </ul>
+  <p><strong>DSA Tracker</strong> is designed as a practical, automated solution to centralize DSA preparation. Built as a Google Chrome extension (Manifest V3), it operates unobtrusively in the browser. Whenever a user solves a problem on any of the five supported platforms, DSA Tracker automatically captures the submission, categorizes the problem by topic and difficulty, and pushes the solution along with structured documentation to the user's GitHub repository.</p>
+  <p>Furthermore, DSA Tracker stores submission records locally in browser storage and presents them through an interactive in-extension dashboard. The dashboard offers visual statistics, search and filter features, and streak tracking to help users maintain consistency.</p>
+  <h3 class="sub-header">Key Highlights of DSA Tracker:</h3>
+  <ul style="list-style-type: '➢ '; padding-left: 20px;">
+    <li><strong>Multi-Platform Solution Extraction:</strong> Automatically detects accepted submissions on LeetCode, GeeksforGeeks, CodeChef, Codeforces, and HackerRank.</li>
+    <li><strong>Automated Repository Sync:</strong> Pushes code, problem statements, and metadata directly to GitHub via the REST API without an intermediate server.</li>
+    <li><strong>Structured Directory Organization:</strong> Groups solutions systematically into <code>DSA/&lt;Category&gt;/&lt;Difficulty&gt;/&lt;Slug&gt;/</code> paths and updates a central repository index table.</li>
+    <li><strong>Local Analytics Dashboard:</strong> Displays difficulty ratios, platform distribution, topic-wise progress bars, and recent activity using Chart.js.</li>
+    <li><strong>Streak Tracking & Notifications:</strong> Calculates daily solving streaks using <code>chrome.alarms</code> and delivers browser reminder alerts.</li>
+    <li><strong>Privacy & Lightweight Design:</strong> Eliminates external server dependencies by storing configuration tokens and statistics securely in <code>chrome.storage.local</code>.</li>
+  </ul>
+
+  <!-- 4. LITERATURE REVIEW -->
+  <h2 class="section-header">4. LITERATURE REVIEW</h2>
+  <p>Current practices and tools used by students to manage their DSA problem-solving progress generally fall into four categories:</p>
+  <ol>
+    <li><strong>Manual Code Archiving:</strong> Students manually copy solved code from online editors and paste it into local text files or personal GitHub repositories. While straightforward, this process is repetitive, relies entirely on human discipline, and is often discontinued.</li>
+    <li><strong>Platform-Native Profiles:</strong> Each coding website maintains a user profile with submission records. However, these statistics are siloed within each platform, making it impossible to get a consolidated view of overall DSA progress across multiple websites.</li>
+    <li><strong>Spreadsheets and Custom Notes:</strong> Students often use tools like Microsoft Excel, Google Sheets, or Notion to log problem titles, links, and dates. This approach requires manual data entry for every problem solved, lacks code backup, and cannot verify submission correctness automatically.</li>
+    <li><strong>Single-Platform Browser Extensions:</strong> Browser tools such as LeetHub automate code pushes for LeetCode. However, they lack support for other major platforms (such as GeeksforGeeks, CodeChef, Codeforces, and HackerRank), do not offer topic classification, and lack integrated analytics dashboards.</li>
+  </ol>
+
+  <h3 class="sub-header">Detailed Review of Related Approaches and Systems:</h3>
+  <p><strong>Manual Spreadsheet and Template Systems (Common Academic Practice):</strong> In typical college environments, students maintain manual logbooks or spreadsheets (such as Striver's SDE Sheet trackers) to check off solved problems. While these sheets provide structured topic lists, they require continuous manual updates. They fail to archive actual solution code or execution statistics, leaving students without a centralized codebase for revision [1].</p>
+  <p><strong>Platform-Specific Dashboard Tracking (LeetCode / CodeChef Profiles):</strong> Platform profiles summarize solved count, acceptance rate, and contest ratings. However, these metrics remain restricted to their respective ecosystems. A student active on both LeetCode and Codeforces must check two separate portals, hindering a unified evaluation of algorithmic strengths and weaknesses [2].</p>
+  <p><strong>Single-Platform GitHub Synchronization Tools (e.g., LeetHub v1/v2):</strong> Tools like LeetHub demonstrated the viability of browser extensions auto-syncing LeetCode solutions to GitHub repositories via the GitHub API. However, analysis of such tools reveals three primary limitations:
+    <br>&bull; They are hardcoded for a single platform (LeetCode) and ignore major competitive programming sites like Codeforces or CodeChef.
+    <br>&bull; They save files in flat or basic folder layouts without multi-level categorization by algorithmic topic (e.g., Dynamic Programming vs. Graphs).
+    <br>&bull; They lack local analytics tools, streak monitoring, or offline progress dashboards [3].
+  </p>
+
+  <!-- 5. METHODOLOGY -->
+  <h2 class="section-header">5. METHODOLOGY</h2>
+  <p>DSA Tracker adopts a modular client-side architecture operating within Google Chrome (Manifest V3). The workflow covers content scraping, topic classification, GitHub REST API synchronization, local storage logging, and analytics rendering.</p>
+  <h3 class="sub-header">Stepwise Workflow:</h3>
+  <ol>
+    <li><strong>Platform Script Injection & DOM Monitoring:</strong> Content scripts (<code>leetcode.js</code>, <code>gfg.js</code>, <code>codechef.js</code>, <code>codeforces.js</code>, <code>hackerrank.js</code>) extending a base platform scraper (<code>base.js</code>) run in the background on supported coding websites. They monitor DOM elements for successful submission indicators (e.g., "Accepted" status tags or success containers).</li>
+    <li><strong>Metadata & Solution Extraction:</strong> Upon detecting an accepted submission, the content script extracts the problem title, problem slug, difficulty rating (Easy, Medium, Hard), topic tags, programming language extension, source code string, and problem URL.</li>
+    <li><strong>Topic & Difficulty Classification:</strong> The background service worker (<code>background.js</code> and <code>github.js</code>) processes the extracted tags and title keywords through a keyword-matching classifier. It maps the problem to standard DSA categories such as Arrays, Strings, Dynamic Programming, Graphs, Trees, Greedy, or Math.</li>
+    <li><strong>Directory Structure & Markdown File Generation:</strong> The system builds a structured folder path (<code>DSA/&lt;Category&gt;/&lt;Difficulty&gt;/&lt;Slug&gt;/</code>) and prepares three repository components: solution source file (e.g., <code>solution.cpp</code>, <code>solution.py</code>, <code>solution.java</code>), a detailed <code>problem.md</code>, and an updated root <code>README.md</code> table.</li>
+    <li><strong>Direct GitHub API Synchronization:</strong> Using the stored GitHub Personal Access Token (PAT), <code>github.js</code> performs authenticated REST API calls to create or update files directly in the user's target repository under a single commit message.</li>
+    <li><strong>Local Storage & Streak Calculation:</strong> After a successful push, the submission record is appended to <code>stats.solved</code> inside <code>chrome.storage.local</code>. The system updates the daily solving streak counter and displays a success notification toast. Daily background alarm checks (<code>chrome.alarms</code>) issue reminders if no problem has been solved on a given day.</li>
+    <li><strong>Dashboard Rendering & Visualization:</strong> When the user opens <code>dashboard.html</code>, <code>dashboard.js</code> reads stored submission records from <code>chrome.storage.local</code>. It uses Chart.js to render charts for difficulty breakdown, platform breakdown, topic coverage, and recent submission logs.</li>
+  </ol>
+
+  <h3 class="sub-header">System Architecture & Dataflow:</h3>
+  <div class="diagram-box">
++-------------------------------------------------------------------+
+|                     User Solves Problem                           |
+|        (LeetCode / GFG / CodeChef / Codeforces / HackerRank)      |
++-------------------------------------------------------------------+
+                                 |
+                                 v
++-------------------------------------------------------------------+
+|               Content Script (DOM Scraping)                       |
+|   - Detects "Accepted" status                                     |
+|   - Extracts Code, Metadata, Difficulty, Tags, Language           |
++-------------------------------------------------------------------+
+                                 |
+                                 v
++-------------------------------------------------------------------+
+|            Background Service Worker (background.js)              |
+|   - Classifies Category (Arrays, DP, Graphs, Trees, etc.)         |
+|   - Constructs Path: DSA/&lt;Category&gt;/&lt;Difficulty&gt;/&lt;Slug&gt;/          |
++-------------------------------------------------------------------+
+                                 |
+        +------------------------+------------------------+
+        |                                                 |
+        v                                                 v
++----------------------------------+   +----------------------------------+
+|     GitHub REST API Push         |   |     Local Chrome Storage         |
+|   - Pushes solution code file    |   |   - Saves submission record      |
+|   - Pushes problem.md            |   |   - Updates streak counter       |
+|   - Updates root README.md index |   |   - Triggers streak alarms       |
++----------------------------------+   +----------------------------------+
+                                                          |
+                                                          v
+                                       +----------------------------------+
+                                       |    In-Extension Dashboard         |
+                                       |   - Difficulty / Platform Charts |
+                                       |   - Topic Progress Bars          |
+                                       |   - Recent Submissions Log       |
+                                       +----------------------------------+
+  </div>
+
+  <!-- 6. RESOURCES [H/W, S/W] -->
+  <h2 class="section-header">6. RESOURCES [H/W, S/W]</h2>
+  <h3 class="sub-header">HARDWARE REQUIREMENTS</h3>
+  <ul>
+    <li><strong>Processor:</strong> Intel Core i3 / AMD Ryzen 3 or higher.</li>
+    <li><strong>RAM:</strong> 4 GB minimum (8 GB recommended for multi-tab browser usage).</li>
+    <li><strong>Storage Space:</strong> 100 MB of free storage space for browser installation and local extension files.</li>
+    <li><strong>Display:</strong> Standard resolution display (1366x768 or higher).</li>
+  </ul>
+  <h3 class="sub-header">SOFTWARE REQUIREMENTS</h3>
+  <ul>
+    <li><strong>Operating System:</strong> Windows 10/11, macOS, or Linux.</li>
+    <li><strong>Web Browser:</strong> Google Chrome, Microsoft Edge, Brave, or any Chromium-based browser supporting Manifest V3 extension standards.</li>
+    <li><strong>Core Web Stack:</strong> HTML5, CSS3, JavaScript (ES6+ standard).</li>
+    <li><strong>Browser Extension Framework:</strong> Chrome Extension Manifest V3 APIs (<code>chrome.storage.local</code>, <code>chrome.alarms</code>, <code>chrome.notifications</code>, <code>chrome.scripting</code>, <code>chrome.runtime</code>).</li>
+    <li><strong>External API Integration:</strong> GitHub REST API v3 (for automated repository management and file commits via fine-grained Personal Access Tokens).</li>
+    <li><strong>Visualization Libraries:</strong> Chart.js (v4, bundled locally via <code>vendor/chart.umd.min.js</code>).</li>
+    <li><strong>Development Tools:</strong> Visual Studio Code (IDE), Git for source management, Chrome Extension Developer Mode for testing.</li>
+  </ul>
+  <h3 class="sub-header">OTHER REQUIREMENTS</h3>
+  <ul>
+    <li><strong>GitHub Account:</strong> Active GitHub account with a fine-grained or classic Personal Access Token (PAT) configured with contents read/write permissions.</li>
+    <li><strong>Internet Connectivity:</strong> Active internet connection for communicating with platform websites and making API calls to GitHub.</li>
+  </ul>
+
+  <!-- 7. PROJECT PLANNING (SCHEDULING) -->
+  <h2 class="section-header">7. PROJECT PLANNING (SCHEDULING)</h2>
+  <table>
+    <thead>
+      <tr>
+        <th style="width: 15%;">Phase</th>
+        <th style="width: 65%;">Tasks</th>
+        <th style="width: 20%;">Duration</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td style="text-align: center;"><strong>Phase 1</strong></td><td>Requirement Analysis & Platform DOM Investigation</td><td style="text-align: center;">2 Weeks</td></tr>
+      <tr><td style="text-align: center;"><strong>Phase 2</strong></td><td>Content Script Scraping Engine Development (LeetCode, GFG, CodeChef, Codeforces, HackerRank)</td><td style="text-align: center;">3 Weeks</td></tr>
+      <tr><td style="text-align: center;"><strong>Phase 3</strong></td><td>Client-Side GitHub REST API Layer & Directory Classifier Implementation</td><td style="text-align: center;">2 Weeks</td></tr>
+      <tr><td style="text-align: center;"><strong>Phase 4</strong></td><td>Local Storage Management, Streak Tracking & Notification Alarms Setup</td><td style="text-align: center;">2 Weeks</td></tr>
+      <tr><td style="text-align: center;"><strong>Phase 5</strong></td><td>Analytics Dashboard & Visual UI Components (Chart.js Integration)</td><td style="text-align: center;">2 Weeks</td></tr>
+      <tr><td style="text-align: center;"><strong>Phase 6</strong></td><td>End-to-End System Testing, Bug Fixes & Project Documentation</td><td style="text-align: center;">2 Weeks</td></tr>
+    </tbody>
+  </table>
+  <p><strong>Total Duration:</strong> 13 Weeks (Approx.)</p>
+
+  <!-- 8. REFERENCES -->
+  <h2 class="section-header">8. REFERENCES</h2>
+  <ol>
+    <li>S. L. Harris and D. Money Harris, <em>Digital Design and Computer Architecture</em>, 2nd ed. Morgan Kaufmann, 2012, pp. 215–230.</li>
+    <li>W. Chrome Developer Documentation, "Migrating to Extension Manifest V3," Google Developers, 2023. [Online]. Available: https://developer.chrome.com/docs/extensions/mv3/intro/</li>
+    <li>GitHub Developer Documentation, "REST API endpoints for repository contents," GitHub Docs, 2023. [Online]. Available: https://docs.github.com/en/rest/repos/contents</li>
+    <li>M. Haverbeke, <em>Eloquent JavaScript: A Modern Introduction to Programming</em>, 3rd ed. No Starch Press, 2018.</li>
+    <li>Chart.js Documentation, "Chart.js: Open source HTML5 Charts for most popular chart types," 2023. [Online]. Available: https://www.chartjs.org/docs/latest/</li>
+    <li>E. Gamma, R. Helm, R. Johnson, and J. Vlissides, <em>Design Patterns: Elements of Reusable Object-Oriented Software</em>, Addison-Wesley, 1994.</li>
+    <li>MDN Web Docs, "Using the Fetch API," Mozilla Developer Network, 2023. [Online]. Available: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API</li>
+    <li>T. H. Cormen, C. E. Leiserson, R. L. Rivest, and C. Stein, <em>Introduction to Algorithms</em>, 3rd ed. MIT Press, 2009.</li>
+    <li>W3C Recommendation, "Web Storage API Specification," World Wide Web Consortium, 2021. [Online]. Available: https://www.w3.org/TR/webstorage/</li>
+    <li>E. B. Bausor and A. R. L. V. Wright, "Automated assessment systems in computer science education," <em>ACM Inroads</em>, vol. 11, no. 2, pp. 45–52, 2020.</li>
+  </ol>
+
+</body>
+</html>

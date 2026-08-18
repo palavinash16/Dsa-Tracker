@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DSA Tracker · Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+</head>
+<body>
+  <div class="aurora"></div>
+
+  <header class="topbar">
+    <div class="brand">
+      <div class="brand-mark">&lt;/&gt;</div>
+      <div>
+        <h1>DSA Tracker</h1>
+        <p class="sub">Your coding grind, visualized</p>
+      </div>
+    </div>
+    <div class="topbar-actions">
+      <span id="conn" class="pill pill-muted"><span class="dot"></span> connecting…</span>
+      <button id="refresh" class="btn">↻ Refresh</button>
+      <button id="theme" class="btn btn-icon" title="Toggle theme">◐</button>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <!-- KPI cards -->
+    <section class="kpis">
+      <article class="card kpi" data-accent="green">
+        <div class="kpi-top"><span class="kpi-label">Problems Pushed</span><span class="kpi-ico">✓</span></div>
+        <div class="kpi-value" id="kpi-pushed">0</div>
+        <div class="kpi-foot" id="kpi-pushed-foot">across all platforms</div>
+      </article>
+      <article class="card kpi" data-accent="orange">
+        <div class="kpi-top"><span class="kpi-label">Current Streak</span><span class="kpi-ico">🔥</span></div>
+        <div class="kpi-value" id="kpi-streak">0</div>
+        <div class="kpi-foot" id="kpi-streak-foot">days in a row</div>
+      </article>
+      <article class="card kpi" data-accent="purple">
+        <div class="kpi-top"><span class="kpi-label">Longest Streak</span><span class="kpi-ico">🏆</span></div>
+        <div class="kpi-value" id="kpi-longest">0</div>
+        <div class="kpi-foot">personal best</div>
+      </article>
+      <article class="card kpi" data-accent="blue">
+        <div class="kpi-top"><span class="kpi-label">Active Days</span><span class="kpi-ico">📅</span></div>
+        <div class="kpi-value" id="kpi-active">0</div>
+        <div class="kpi-foot" id="kpi-active-foot">days you showed up</div>
+      </article>
+    </section>
+
+    <!-- Heatmap -->
+    <section class="card heatmap-card">
+      <div class="card-head">
+        <h2>Activity</h2>
+        <div class="legend">
+          <span>Less</span>
+          <i class="lvl lvl-0"></i><i class="lvl lvl-1"></i><i class="lvl lvl-2"></i><i class="lvl lvl-3"></i><i class="lvl lvl-4"></i>
+          <span>More</span>
+        </div>
+      </div>
+      <div class="heatmap-scroll">
+        <div id="heatmap" class="heatmap"></div>
+      </div>
+      <div id="heat-tip" class="heat-tip"></div>
+    </section>
+
+    <!-- Charts -->
+    <section class="grid-3">
+      <article class="card chart-card">
+        <div class="card-head"><h2>By Difficulty</h2></div>
+        <div class="chart-box"><canvas id="chart-diff"></canvas></div>
+        <div id="diff-legend" class="mini-legend"></div>
+      </article>
+      <article class="card chart-card">
+        <div class="card-head"><h2>By Platform</h2></div>
+        <div class="chart-box"><canvas id="chart-platform"></canvas></div>
+      </article>
+      <article class="card chart-card">
+        <div class="card-head"><h2>Top Categories</h2></div>
+        <div class="chart-box"><canvas id="chart-cat"></canvas></div>
+      </article>
+    </section>
+
+    <!-- Recent activity -->
+    <section class="card feed-card">
+      <div class="card-head">
+        <h2>Recent Activity</h2>
+        <div class="filters" id="filters">
+          <button class="chip active" data-f="all">All</button>
+          <button class="chip" data-f="pushed">Pushed</button>
+          <button class="chip" data-f="failed">Failed</button>
+        </div>
+      </div>
+      <ul id="feed" class="feed"></ul>
+    </section>
+
+    <footer class="foot">
+      Reading from <code id="api-url">http://127.0.0.1:8000/stats</code> · auto-refreshes every 30s
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
