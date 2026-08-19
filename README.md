@@ -121,5 +121,5 @@ Click **"Open Dashboard"** from the extension popup to view:
 
 ## 👤 Author
 
-Developed by **Avinash Pal**  
+Developed by **Avinash Kumar Pal**  
 GitHub: [@palavinash16](https://github.com/palavinash16)
